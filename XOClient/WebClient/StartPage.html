@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Js/PlayerSelection.js" ></script>
+    <script src="Js/TTTpacket.js" ></script>
+	<script src="Js/SocialNetworks.js" ></script>
+	<script src="Js/Authorization.js" ></script>
+	<script src="Js/Dispatcher.js" ></script>
+    <link href="Styles/StartPageStyle.css"  rel="stylesheet"/>
+
+</head>
+<body>
+    <!-- Main page -->
+    <div class="mainPage" id="playerList" >
+
+    </div>
+    <div class="mainPage" id="popupMenu">
+        <input id="bLogIn" type="button" value="Log in" />
+        <input id="bLogOut" type="button" value="Log out" />
+        <input id="bInvite" type="button" value="Invite" />
+        <select>
+            <option>Tic Tac Toe</option>
+        </select>
+    </div>
+    <div class="mainPage" id="statusMenu">
+        <label id="statusLabel1">Waiting for connection to server...</label>
+        <label id="statusLabel2">Your name: </label>
+    </div>
+
+    <!-- Auth page -->
+    <div id="authPage">
+        <label>Enter your login</label><br />
+        <input id="textLogin" type="text" value="" /><br />
+        <label>Enter your password</label><br />
+        <input id="textPass" type="password" value="" /><br /><br />
+        <input id="bChangePassword" type="button" value="Change password" />
+        <input id="bAuthorization" type="button" value="Authorization" /><br />
+        <input id="bForgotPassword" type="button" value="Forgot password?" />
+        <input id="bRegistration" type="button" value="Registration" />
+
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=1859909034291396";
+                    fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script async defer src="https://apis.google.com/js/api.js"
+                onload="this.onload=function(){};handleClientLoad()"
+                onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+        <button id="signin-button" onclick="handleSignInClick()">Google login</button><br />
+
+        <div class="fb-login-button" onlogin="javascriprt:checkLoginState();" scope="user_education_history,user_birthday,user_hometown,user_likes,email,user_photos,user_events,user_location,user_relationships,user_relationship_details,user_religion_politics,user_website,user_work_history,user_about_me" size="xlarge" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true">
+        </div>
+
+        <div id="status">
+        </div>
+    </div>
+
+    <!-- Game menu -->
+    <div id="gameMenu" class="mainPage">
+        <div id="gameHeader" >
+            <p>Tic Tac Toe</p>
+            <input class="gameField" type="button" value="X" id="buttonClose">
+        </div>
+        <input class="gameField" id="b1" type="button" onclick="OnButtonClicked(1)" value=" " />
+        <input class="gameField" id="b2" type="button" onclick="OnButtonClicked(2)" value=" " />
+        <input class="gameField" id="b3" type="button" onclick="OnButtonClicked(3)" value=" " /><br />
+        <input class="gameField" id="b4" type="button" onclick="OnButtonClicked(4)" value=" " />
+        <input class="gameField" id="b5" type="button" onclick="OnButtonClicked(5)" value=" " />
+        <input class="gameField" id="b6" type="button" onclick="OnButtonClicked(6)" value=" " /><br />
+        <input class="gameField" id="b7" type="button" onclick="OnButtonClicked(7)" value=" " />
+        <input class="gameField" id="b8" type="button" onclick="OnButtonClicked(8)" value=" " />
+        <input class="gameField" id="b9" type="button" onclick="OnButtonClicked(9)" value=" " />
+        <label id="lGameTurn">Turn | </label><br />
+    </div>
+    
+    <!-- Custom modal change pass -->
+    <div id="mChangePass" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Change password</h2>
+            </div>
+            <div class="modal-body">
+                <label>Enter login:</label><br />
+                <input type="text" id="mLogin"><br />
+                <label>Enter password:</label><br />
+                <input type="text" id="mPass"><br />
+                <label>Enter new password:</label><br />
+                <input type="text" id="mNewPass">
+            </div>
+            <div class="modal-footer">
+                <label class="result" id="mConfirm">Confirm</label>
+                <label>|</label>
+                <label class="result" id="mCancel">Cancel</label>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

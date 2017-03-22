@@ -1,0 +1,9 @@
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\bin\Debug\UniversalStream.dll
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\bin\Debug\UniversalStream.pdb
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\obj\Debug\UniversalStream.dll
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\obj\Debug\UniversalStream.pdb
+C:\Users\Admin\Desktop\XOFull\XOFull\XOServer\UniversalStream\bin\Debug\UniversalStream.dll
+C:\Users\Admin\Desktop\XOFull\XOFull\XOServer\UniversalStream\bin\Debug\UniversalStream.pdb
+C:\Users\Admin\Desktop\XOFull\XOFull\XOServer\UniversalStream\obj\Debug\UniversalStream.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\XOFull\XOFull\XOServer\UniversalStream\obj\Debug\UniversalStream.dll
+C:\Users\Admin\Desktop\XOFull\XOFull\XOServer\UniversalStream\obj\Debug\UniversalStream.pdb

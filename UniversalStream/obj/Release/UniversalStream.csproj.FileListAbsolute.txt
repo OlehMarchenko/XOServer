@@ -1,0 +1,4 @@
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\bin\Release\UniversalStream.dll
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\bin\Release\UniversalStream.pdb
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\obj\Release\UniversalStream.dll
+D:\Projects\CSharpPrograms\ORT\Other solutions\XOServer\UniversalStream\obj\Release\UniversalStream.pdb
